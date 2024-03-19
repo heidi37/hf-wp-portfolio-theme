@@ -15,21 +15,12 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Heidi Fryzell</a> -->
+        <a class="navbar-brand" href="<?php echo site_url('/') ?>"><img src="<?php echo get_theme_file_uri('./images/prompt.svg') ?>" alt="terminal command prompt icon"></a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-auto">
-              <?php if(is_page('home')){  ?>
-                <a class="nav-link active"
-              <?php }
-              else { ?>
-                <a class="nav-link"
-              <?php } ?>
-              href="<?php echo site_url('/') ?>">home</a>
-            </li>
             <li class="nav-item mx-auto">
             <?php if(get_post_type() == 'project'){  ?>
                 <a class="nav-link active"

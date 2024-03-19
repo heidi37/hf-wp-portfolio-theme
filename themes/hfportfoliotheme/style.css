@@ -97,7 +97,7 @@ h2.wp-block-heading {
 }
 
 .blog-page-content {
-  margin-top: 350px;
+  margin-top: 300px;
 }
 
 /* Base Styles */
@@ -181,6 +181,11 @@ small {
 
 .navbar {
   z-index: 10;
+  padding: 1rem 0 3rem;
+}
+
+.navbar-brand img {
+  width: 25px;
 }
 
 div#navbarNav {
