@@ -1,0 +1,7 @@
+<?php echo get_theme_file_uri('./images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg')?>
+
+<?php echo get_theme_file_uri('./images/heidi-fryzell-headshot.png') ?>
+
+<?php echo get_theme_file_uri('./images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg') ?>
+
+
