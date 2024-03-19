@@ -19,19 +19,6 @@ get_header(); ?>
 </div>
 </div>
 
-<!-- controlled by the Block Editor -->
-<div id="primary" class="content-area">
-  <main id="main" class="site-main">
-    <!-- Your block editor content goes here -->
-    <?php
-    // Output the content of the page
-    while (have_posts()) : the_post();
-      the_content();
-    endwhile;
-    ?>
-  </main>
-</div>
-
 <!-- Featured Project Post -->
 <div class="featured-project-outer">
   <div class="container">
@@ -126,5 +113,16 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
+<!-- controlled by the Block Editor -->
+<!-- <div id="primary" class="content-area">
+  <main id="main" class="site-main">
+    <?php
+    while (have_posts()) : the_post();
+      the_content();
+    endwhile;
+    ?>
+  </main>
+</div> -->
 
 <?php get_footer(); ?>

@@ -19,9 +19,9 @@ get_header();
 
       <div class="blog-generic-content">
         <div>
-          <p><?php the_excerpt() ?></p>
-          <p class="mt-2">
-            <a class="nav-link" href="<?php the_permalink(); ?>">Continue reading &raquo;</a>
+          <?php the_excerpt() ?>
+          <p>
+            <a href="<?php the_permalink(); ?>">Continue reading &raquo;</a>
           </p>
         </div>
         <?php if (has_post_thumbnail()) { ?>

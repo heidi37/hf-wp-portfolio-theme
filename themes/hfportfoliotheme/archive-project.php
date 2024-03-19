@@ -3,11 +3,11 @@
 get_header(); ?>
 
 <div class="container">
-  <h1><?php post_type_archive_title(); ?></h1>
+  <h1>projects</h1>
   <?php
   while (have_posts()) {
     the_post(); ?>
-    <div class="featured-project mt-5">
+    <div class="featured-project mt-5 mb-5">
       <div class="featured-first-col">
         <span class="post-image-rounded"><a href="<?php the_field('project_url') ?>"><?php the_post_thumbnail(); ?></a></span>
       </div>
@@ -29,7 +29,7 @@ get_header(); ?>
           } ?>
         </p>
         <p class="mt-2">
-          <a class="nav-link" href="<?php the_permalink(); ?>">Learn more &raquo;</a>
+          <a href="<?php the_permalink(); ?>">Learn more &raquo;</a>
         </p>
       </div>
     </div>

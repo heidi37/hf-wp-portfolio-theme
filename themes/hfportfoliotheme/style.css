@@ -163,6 +163,7 @@ h4 {
 a {
   color: var(--link-color);
   text-decoration: underline;
+  font-weight: 500;
 }
 
 p {
@@ -285,6 +286,7 @@ button.navbar-toggler {
 .featured-project-outer {
   background: var(--primary-light);
   padding: 4rem 2rem 6rem;
+  margin-top: 9rem;
 }
 
 .featured-project {
@@ -298,8 +300,13 @@ button.navbar-toggler {
   text-decoration: underline;
 }
 
+.featured-second-col h3 {
+  margin-top: 1rem;
+}
+
 .post-image-rounded a img {
   border-radius: 10px;
+  box-shadow: -1px -1px 1px #ddd;
 }
 
 .year-pill {
@@ -347,6 +354,7 @@ ul.breadcrumbs li a:hover {
 }
 
 /* Projects Custom Post Type Fields */
+
 .project-type {
   font-weight: 700;
 }
@@ -416,9 +424,8 @@ h3 .project-image-link {
 }
 
 .icon.coffee {
-  color: var(--pill-color);
-  font-size: 8rem;
-  margin-left: 1.5rem;
+  font-size: 6rem;
+  margin-left: 1.25rem;
 }
 
 .icon-text {
@@ -484,6 +491,10 @@ h3 .project-image-link {
   }
   .featured-second-col {
     flex: 2;
+  }
+
+  .featured-second-col h3 {
+    margin-top: 0rem;
   }
 
   /* Blog MQs */
