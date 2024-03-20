@@ -9,7 +9,7 @@ get_header(); ?>
 
   <div class="header-hero-col-2 mt-4">
     <h1>Hello, I'm Heidi.</h1>
-    <p class="mt-4 px-5">
+    <p>
       I am a part-time frontend developer and production specialist. I
       am currently learning React and full stack development at
       <a href="https://www.codecademy.com/" target="_blank">codecademy</a>.
@@ -22,7 +22,7 @@ get_header(); ?>
 <!-- Featured Project Post -->
 <div class="featured-project-outer">
   <div class="container">
-    <h2 class="mb-5 text-center">featured project</h2>
+    <h2 class="mb-1 text-center">featured project</h2>
     <?php
     $homepageProjects = new WP_Query(array(
       'posts_per_page' => 1,

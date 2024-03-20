@@ -18,7 +18,7 @@ function custom_post_per_page( $query ) {
       // Set the number of items per page
       $query->set( 'posts_per_page', 4 );
       $query->set( 'meta_key', 'project_year');
-      $query->set( 'orderby', 'meta_value_num');
+      $query->set( 'orderby', 'date');
       $query->set( 'order', 'DSC');
   }
 }
