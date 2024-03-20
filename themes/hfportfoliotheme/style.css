@@ -6,13 +6,14 @@
 
 :root {
   --primary-color: #404fa0;
-  --primary-light: #404ea021;
+  --primary-light: #404ea00f;
   --primary-hover: #313d7c;
   --primary-active: #4d5b7e;
   --link-color: #39457b;
-  --accent-color: #f9f4f1;
+  --accent-color: #f1f7f9;
   --pill-color: #736550;
   --headline: #4b6572;
+  --body-text: #222222;
 }
 
 /* Content Editor Styles */
@@ -84,27 +85,23 @@ h2.wp-block-heading {
 }
 
 .blog-page-banner__bg-image {
-  opacity: 0.53;
+  /* opacity: 0.53; */
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 400px;
 }
 
 .blog-page-content {
-  margin-top: 300px;
+  margin-top: 2rem;
 }
 
 /* Base Styles */
 
 body {
   font-weight: 400;
-  color: #444;
+  color: var(--body-text);
+  background: var(--accent-color);
 }
 
 img {
@@ -129,23 +126,14 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
   font-size: 1.8rem;
   color: var(--primary-color);
   position: relative;
   display: inline-block;
   width: 100%;
-}
-
-h2::before {
-  content: "";
-  position: absolute;
-  bottom: 5px; /* Adjust this value to control the shift */
-  left: 0;
-  width: 100%;
-  height: 1px; /* Thickness of the border */
-  background-color: var(--headline); /* Color of the border */
-  opacity: 0.07;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -180,22 +168,34 @@ small {
   max-width: 1000px;
 }
 
+.container-fluid {
+  background: #fff;
+  border-radius: 10px;
+}
+
 .navbar {
   z-index: 10;
   padding: 1rem 0 3rem;
+}
+
+.navbar-brand {
+  padding: .67rem 1rem .97rem;
+  border-radius: 10px;
+  /* background: #fff; */
+  /* margin-top: 0.5rem; */
 }
 
 .navbar-brand img {
   width: 25px;
 }
 
-div#navbarNav {
+/* div#navbarNav {
   margin-top: 0.5rem;
-}
+} */
 
 ul.navbar-nav {
-  background: #fff;
-  border-radius: 10px;
+  /* background: #fff;
+  border-radius: 10px; */
   padding: 0 0.25rem;
 }
 
@@ -212,16 +212,28 @@ li.nav-item {
   margin: 0.25rem 0;
 }
 
+.navbar-nav .nav-link.active {
+  color: var(--body-text);
+}
+
 li.nav-item:hover {
   background-color: var(--accent-color);
 }
 
 footer {
   width: 100%;
-  background: var(--pill-color);
-  color: white;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 0;
   margin-top: 13rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--headline);
+  opacity: 0.07;
 }
 
 footer  p {
@@ -254,6 +266,9 @@ footer  p {
 button.navbar-toggler {
   border: none;
   background: #fff;
+  padding: .82rem .75rem;
+  margin-top: .5rem;
+  border-radius: 10px;
 }
 
 /* Home Page */
@@ -306,7 +321,7 @@ button.navbar-toggler {
 
 .post-image-rounded a img {
   border-radius: 10px;
-  box-shadow: -1px -1px 1px #ddd;
+  border: 1px solid #ddd;
 }
 
 .year-pill {

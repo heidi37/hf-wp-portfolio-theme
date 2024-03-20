@@ -1,6 +1,6 @@
 
 <footer>
-        <p class="text-center">
+        <p class="text-center mt-1">
           <small
             >&copy;<span id="copyrightYear"></span> Heidi Fryzell. All rights
             reserved.</small
@@ -9,7 +9,6 @@
       </footer>
 
 </body>
-
 <?php wp_footer(); ?>
 
 </html>

@@ -22,18 +22,17 @@ get_header(); ?>
 <!-- Featured Project Post -->
 <div class="featured-project-outer">
   <div class="container">
-    <h2 class="mb-5">featured project</h2>
+    <h2 class="mb-5 text-center">featured project</h2>
     <?php
     $homepageProjects = new WP_Query(array(
       'posts_per_page' => 1,
       'post_type' => 'project',
-      'meta_key' => 'project_year',
-      'orderby' => 'meta_value_num',
+      'orderby' => 'date',
       'order' => 'DSC'
     ));
     while ($homepageProjects->have_posts()) {
       $homepageProjects->the_post(); ?>
-      <div class="featured-project">
+      <div class="featured-project mt-5">
         <div class="featured-first-col">
           <span class="post-image-rounded"><a href="<?php the_field('project_url') ?>"><?php the_post_thumbnail(); ?></a></span>
         </div>
@@ -66,7 +65,7 @@ get_header(); ?>
   </div>
 </div>
 
-<!-- Featured Blog Post -->
+<!-- Featured Blog Post
 <div class="featured-blog-outer">
   <div class="container">
     <h2 class="mb-5">from the blog</h2>
@@ -74,6 +73,7 @@ get_header(); ?>
     $homepageProjects = new WP_Query(array(
       'posts_per_page' => 1,
       'post_type' => 'post',
+      'orderby' => 'date',
       'order' => 'DSC'
     ));
     while ($homepageProjects->have_posts()) {
@@ -112,7 +112,7 @@ get_header(); ?>
     <div class="text-end"><a href="<?php echo site_url('/blog') ?>" class="nav-link">More Blog Posts &raquo;</a>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- controlled by the Block Editor -->
 <!-- <div id="primary" class="content-area">
