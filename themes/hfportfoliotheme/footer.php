@@ -1,6 +1,6 @@
 
 <footer>
-        <p class="text-center mt-1">
+        <p class="text-center">
           <small
             >&copy;<span id="copyrightYear"></span> Heidi Fryzell. All rights
             reserved.</small

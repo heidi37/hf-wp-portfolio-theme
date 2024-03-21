@@ -13,7 +13,7 @@ get_header(); ?>
       </div>
       <div class="featured-second-col">
         <h3><?php the_title(); ?></h3>
-        <div>
+        <div class="mt-2">
           <span class="year-pill"><?php
                                   $projectDate = new DateTime(get_field('project_year'));
                                   echo $projectDate->format('Y')

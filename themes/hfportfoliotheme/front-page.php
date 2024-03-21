@@ -9,10 +9,8 @@ get_header(); ?>
 
   <div class="header-hero-col-2 mt-4">
     <h1>Hello, I'm Heidi.</h1>
-    <p>
-      I am a part-time frontend developer and production specialist. I
-      am currently learning React and full stack development at
-      <a href="https://www.codecademy.com/" target="_blank">codecademy</a>.
+    <p class="px-5">
+      I am a frontend developer and web production specialist.
     </p>
     <a href="<?php echo site_url('/contact') ?>" class="button d-inline-block">Contact Me &raquo;</a>
   </div>
@@ -38,7 +36,7 @@ get_header(); ?>
         </div>
         <div class="featured-second-col">
           <h3><?php the_title(); ?></h3>
-          <div>
+          <div class="mt-2">
             <span class="year-pill"><?php
                                     $projectDate = new DateTime(get_field('project_year'));
                                     echo $projectDate->format('Y')
