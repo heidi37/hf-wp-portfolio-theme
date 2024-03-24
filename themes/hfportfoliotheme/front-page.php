@@ -15,7 +15,6 @@ get_header(); ?>
     <a href="<?php echo site_url('/contact') ?>" class="button d-inline-block">Contact Me &raquo;</a>
   </div>
 </div>
-</div>
 
 <!-- Featured Project Post -->
 <div class="featured-project-outer">
